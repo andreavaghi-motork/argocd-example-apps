@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+  name: {{ template "helm-guestbook.fullname" . }}
+data:
+  message: "This will eventually be deleted to test pruning"
